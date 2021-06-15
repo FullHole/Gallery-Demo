@@ -1,0 +1,129 @@
+.vue-wrapper {
+    margin: 0 auto;
+    max-width: 860px;
+    min-width: 320px;
+}
+
+.upload-wrapper {
+    margin: 0 2%;
+}
+.upload-select{
+    margin-left: 20px;
+}
+
+.upload-form {
+    width: 98%;
+    display: flex;
+    flex-direction: column;
+}
+
+.upload-type {
+    display: inline-block;
+    border: 1px solid black;
+    padding: 5px 20px 5px 20px;
+}
+
+.img-url {
+    margin: 20px;
+    width: 250px;
+}
+
+.json-upload {
+    margin: 20px;
+}
+
+.upload-button {
+    width: 100px;
+    margin-left: 20px;
+    margin-bottom: 10px;
+}
+
+.gallery {
+    
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+
+.image-wrapper {
+    margin: 5px;
+    position: relative;
+}
+
+.image-wrapper-dm {
+    box-shadow: 0 5px 10px 1px rgb(33 33 33 / 35%);
+}
+
+.image-loading {
+    background-image: url(../img/loading.gif);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.gallery-img {
+    display: block;
+    box-sizing: border-box;
+    visibility: hidden;
+}
+
+.img-hover {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    visibility: hidden;
+}
+
+.img-hover-visible {
+    visibility: inherit;
+}
+
+.del-btn {
+    display: block;
+    height: 4vmax;
+    width: 4vmax;
+    margin-left: auto;
+    margin-right: 1vw;
+    margin-top: 1vw;
+    border-radius: 50%;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url("data:image/svg+xml,%3Csvg aria-hidden='true' focusable='false' data-prefix='far' data-icon='times-circle' class='svg-inline--fa fa-times-circle fa-w-16' role='img' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'%3E%3Cpath fill='white' d='M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8zm0 448c-110.5 0-200-89.5-200-200S145.5 56 256 56s200 89.5 200 200-89.5 200-200 200zm101.8-262.2L295.6 256l62.2 62.2c4.7 4.7 4.7 12.3 0 17l-22.6 22.6c-4.7 4.7-12.3 4.7-17 0L256 295.6l-62.2 62.2c-4.7 4.7-12.3 4.7-17 0l-22.6-22.6c-4.7-4.7-4.7-12.3 0-17l62.2-62.2-62.2-62.2c-4.7-4.7-4.7-12.3 0-17l22.6-22.6c4.7-4.7 12.3-4.7 17 0l62.2 62.2 62.2-62.2c4.7-4.7 12.3-4.7 17 0l22.6 22.6c4.7 4.7 4.7 12.3 0 17z'%3E%3C/path%3E%3C/svg%3E");
+}
+
+.message {
+    
+    color: red;
+    font-family: sans-serif;
+    padding: 5px;
+    padding-left: 15px;
+    border-radius: 20px;
+    background: rgba(223, 210, 175, 0.836);
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    z-index: 1;
+}
+
+.show-error-enter-active, .show-error-leave-active {
+    transition-duration: 1s;
+}
+
+.show-error-enter, .show-error-leave-to {
+    transform: translateY(-100px);
+}
+
+.error-close-btn {
+    width: 20px;
+    height: 20px;
+    display: block;
+    margin-right: 10px;
+    
+}
+.drop_zone {
+    outline: 2px dashed blue;
+    background-color: cornflowerblue;
+    
+  }

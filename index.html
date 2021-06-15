@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+    
+        <div class="vue-wrapper" id="app">
+            <error :error_messages='errorMessages' @close-error='closeError'></error>
+            <upload ref="upload"></upload>
+            <gallery ref="gallery"></gallery>
+        </div>
+    
+    <script src="js/vue.js"></script>
+    <script src="js/error.js"></script>
+    <script src="js/upload.js"></script>
+    <script src="js/gallery.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
